@@ -1,0 +1,33 @@
+/* Reorder toolbars to our own likins! */
+#navigator-toolbox #PersonalToolbar {
+        order: 0;
+ }
+#navigator-toolbox #titlebar {
+       order: 10;
+ }
+#navigator-toolbox toolbar {
+       order: 20;
+ }
+#navigator-toolbox #TabsToolbar {
+       order: 30;
+}
+#navigator-toolbox #nav-bar, findbar {
+       order: 40;
+}
+
+/* URL-Bar should not be fullwidth */
+#urlbar[breakout][breakout-extend] {
+    left: unset !important;
+    top: var(--urlbar-height) !important;
+}
+
+/* Make tab close btn a little larger */
+.tab-close-button {
+    --tab-close-size: 20px;
+    width: var(--tab-close-size) !important;
+    height: var(--tab-close-size) !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    min-height: var(--tab-close-size);
+    min-width: var(--tab-close-size);
+}
