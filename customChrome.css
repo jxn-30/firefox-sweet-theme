@@ -19,6 +19,7 @@
 #urlbar[breakout][breakout-extend] {
     left: unset !important;
     top: var(--urlbar-height) !important;
+    width: var(--urlbar-width) !important;
 }
 
 /* Make tab close btn a little larger */
